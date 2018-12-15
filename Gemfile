@@ -14,6 +14,9 @@ gem 'jbuilder', '~> 2.5'
 gem 'rack-cors', require: 'rack/cors'
 
 group :development, :test do
+  gem 'rspec-rails'
+  gem 'shoulda-matchers'
+  gem 'factory_bot_rails'
   gem 'pry-rails'
   gem 'pry-byebug'
 end
