@@ -1,10 +1,10 @@
 source 'https://rubygems.org'
-git_source(:github) do |color-game-api|
-  color-game-api = "#{color-game-api}/#{color-game-api}" unless color-game-api.include?("/")
-  "https://github.com/#{color-game-api}.git"
+git_source(:github) do |repo_name|
+  repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
+  "https://github.com/#{repo_name}.git"
 end
 
-ruby '2.4.1'
+ruby '2.5.1'
 
 gem 'bootsnap', '>= 1.2', require: false
 gem 'rails', '~> 5.2.0'
